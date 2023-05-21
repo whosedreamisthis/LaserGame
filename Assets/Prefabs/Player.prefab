@@ -36,7 +36,7 @@ Transform:
   m_Children:
   - {fileID: 9189410850418315137}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7347809007584570573
 MonoBehaviour:
@@ -150,7 +150,10 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1819139121007929539, guid: f6c3bcaa12848414f8d8a7d753fb6bb5, type: 3}
   projectileSpeed: 10
   projectileLifetime: 5
-  firingRate: 0.2
+  baseFiringRate: 0.2
+  useAI: 0
+  firingRateVariance: 0
+  minimumFiringRate: 0.1
   isFiring: 0
 --- !u!1 &6034888174537616483
 GameObject:
