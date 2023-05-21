@@ -9,11 +9,13 @@ public class Health : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         DamageDealer damageDealer = other.GetComponent<DamageDealer>();
-        if (damageDealer != null && tag != other.tag)
+        print(other.tag);
+        if (damageDealer != null)
         {
             TakeDamage(damageDealer.GetDamage());
             //tell damage dealer that it hit something
             damageDealer.Hit();
+            print("hit");
         }
     }
 
